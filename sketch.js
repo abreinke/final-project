@@ -1,5 +1,5 @@
 function preload(){
-soundFormats('mp4' , 'm4a');
+soundFormats('mp3' , 'm4a');
 mySound = loadSound('final-project/rain.m4a');
 }
 
