@@ -14,7 +14,7 @@ windSound = loadSound('wind.mp3');
 function setup(){
   background(220);
   createCanvas(400, 400);
-  soundVolume = 0.5
+  soundVolume = 0.5;
   mySound.setVolume(soundVolume);
   thunderSound.setVolume(soundVolume);
   hailSound.setVolume(soundVolume);
