@@ -1,9 +1,11 @@
+let backgroundTiles;
 let mySound;
 let thunderSound;
 let hailSound;
 let windSound;
 let soundVolume;
 function preload(){
+backgroundTiles = loadImage('collage.jpg');
 soundFormats('mp3' , 'm4a');
 mySound = loadSound('rain.m4a');
 thunderSound = loadSound('thunder.mp3');
@@ -12,13 +14,11 @@ windSound = loadSound('wind.mp3');
 }
 
 function setup(){
-  background(220);
-  createCanvas(400, 400);
-  soundVolume = 0.5;
-  mySound.setVolume(soundVolume);
-  thunderSound.setVolume(soundVolume);
-  hailSound.setVolume(soundVolume);
-  windSound.setVolume(soundVolume);
+soundVolume = 0.5;
+mySound.setVolume(soundVolume);
+thunderSound.setVolume(soundVolume);
+hailSound.setVolume(soundVolume);
+windSound.setVolume(soundVolume);
 }
 
 function keyTyped(){
